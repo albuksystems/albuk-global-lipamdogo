@@ -1,1 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Albuk Global | Samsung Phones – Lipa Mdogo Mdogo</title>
+<meta name="description" content="Buy Samsung Galaxy phones on easy installments via Jumia Jforce. Lipa Mdogo Mdogo – start with a small down payment. Contact Albuk Global.">
 
+<!-- ============================================================
+     GOOGLE ANALYTICS 4
+     👉 STEP 1: Go to https://analytics.google.com
+     👉 STEP 2: Create a new Property → choose "Web"
+     👉 STEP 3: Copy your Measurement ID (looks like G-XXXXXXXXXX)
+     👉 STEP 4: Replace G-E4SMLQNEMS below with that ID
+     ============================================================ -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E4SMLQNEMS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-E4SMLQNEMS');
+
+  // Track WhatsApp button clicks as events
+  function trackWA(phoneName) {
+    gtag('event', 'whatsapp_click', {
+      'event_category': 'Lead',
+      'event_label': phoneName,
+      'value': 1
+    });
+  }
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+:root {
+  --orange: #F85C04;
+  --orange2: #ff8c42;
+  --dark: #0d0d0d;
+  --gold: #FFB400;
+  --green: #25D366;
+  --purple: #3b1fa8;
+  --bg: #f5f1ec;
+  --white: #ffffff;
+}
+body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg); overflow-x: hidden; }
+
+/* ===================== HERO ===================== */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(145deg, #160430 0%, #260d50 45%, #0f1a6a 100%);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  padding: 2rem 1.5rem 5rem;
+  text-align: center;
+  position: relative; overflow: hidden;
+}
+.blob { position:absolute; border-radius:50%; filter:blur(90px); opacity:0.3; pointer-events:none; }
+.b1 { width:380px; height:380px; background:var(--orange); top:-120px; left:-100px; animation: fl 9s ease-in-out infinite; }
+.b2 { width:300px; height:300px; background:#5b2dc9; bottom:-100px; right:-80px; animation: fl 11s 2s ease-in-out infinite; }
+.b3 { width:220px; height:220px; background:var(--gold); top:40%; right:-60px; animation: fl 7s 1s ease-in-out infinite; }
+@keyframes fl { 0%,100%{transform:translateY(0) scale(1)} 50%{transform:translateY(-28px) scale(1.07)} }
+.hero::before {
+  content:''; position:absolute; inset:0;
+  background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 55px 55px;
+}
+.hero-inner { position:relative; z-index:2; max-width:620px; }
+
+/* Brand logo area */
+.brand-header {
+  display: flex; align-items: center; justify-content: center; gap: 12px;
+  margin-bottom: 2rem;
+  animation: fadeUp 0.6s ease both;
+}
+.brand-logo {
+  width: 48px; height: 48px; border-radius: 14px;
+  background: linear-gradient(135deg, var(--gold), var(--orange));
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Syne', sans-serif; font-weight: 900; font-size: 1.3rem; color: #fff;
+  box-shadow: 0 4px 20px rgba(248,92,4,0.4);
+}
+.brand-name { font-family: 'Syne', sans-serif; font-size: 1.4rem; font-weight: 900; color: #fff; letter-spacing: 0.04em; }
+.brand-name span { color: var(--gold); }
+.brand-tagline {
+  font-size: 0.68rem; color: rgba(255,255,255,0.45);
+  letter-spacing: 0.14em; text-transform: uppercase;
+  display: block; margin-top: 1px;
+}
+
+.top-pill {
+  display:inline-flex; align-items:center; gap:8px;
+  background:rgba(255,255,255,0.1); backdrop-filter:blur(12px);
+  border:1px solid rgba(255,255,255,0.18); border-radius:100px;
+  padding:0.4rem 1.2rem; color:rgba(255,255,255,0.85);
+  font-size:0.76rem; font-weight:600;
+  letter-spacing:0.12em; text-transform:uppercase;
+  margin-bottom:1.3rem; animation: fadeUp 0.7s 0.05s ease both;
+}
+.pulse-dot { width:7px; height:7px; background:var(--gold); border-radius:50%; animation: pd 1.6s infinite; }
+@keyframes pd { 0%,100%{opacity:1} 50%{opacity:0.25} }
+
+.hero h1 {
+  font-family:'Syne', sans-serif;
+  font-size: clamp(2.4rem, 10vw, 4.5rem);
+  font-weight:900; color:#fff; line-height:1.05;
+  margin-bottom:1rem; animation: fadeUp 0.8s 0.1s ease both;
+}
+.hero h1 .grd {
+  background: linear-gradient(90deg, var(--gold), var(--orange2));
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+}
+.hero-desc {
+  color:rgba(255,255,255,0.6); font-size:1rem; line-height:1.75;
+  margin-bottom:2rem; animation: fadeUp 0.8s 0.2s ease both;
+}
+
+/* Agent card */
+.agent-badge {
+  display:inline-flex; align-items:center; gap:12px;
+  background:rgba(255,180,0,0.12); border:1.5px solid rgba(255,180,0,0.35);
+  border-radius:16px; padding:0.8rem 1.3rem;
+  margin-bottom:2rem; animation: fadeUp 0.8s 0.3s ease both;
+  max-width: 100%;
+}
+.agent-av {
+  width:44px; height:44px; background: linear-gradient(135deg, var(--gold), var(--orange));
+  border-radius:50%; display:flex; align-items:center; justify-content:center;
+  font-size:1.1rem; font-weight:900; color:#fff; font-family:'Syne',sans-serif; flex-shrink:0;
+}
+.agent-txt { text-align:left; }
+.agent-role { font-size:0.65rem; text-transform:uppercase; letter-spacing:0.12em; color:var(--gold); font-weight:700; display:block; }
+.agent-name { color:#fff; font-weight:600; font-size:0.92rem; }
+.agent-sub { color: rgba(255,255,255,0.4); font-size: 0.75rem; }
+
+.hero-cta {
+  display:inline-flex; align-items:center; gap:10px;
+  background:var(--green); color:#fff;
+  padding:0.95rem 2.2rem; border-radius:100px;
+  font-family:'Syne',sans-serif; font-weight:700; font-size:1rem;
+  text-decoration:none;
+  box-shadow:0 8px 30px rgba(37,211,102,0.4);
+  transition:transform 0.2s, box-shadow 0.2s;
+  animation: fadeUp 0.8s 0.4s ease both;
+}
+.hero-cta:hover { transform:translateY(-3px) scale(1.04); box-shadow:0 14px 40px rgba(37,211,102,0.5); }
+.hero-cta svg { width:20px; height:20px; fill:#fff; }
+
+.scroll-down {
+  position:absolute; bottom:1.8rem; left:50%; transform:translateX(-50%);
+  z-index:2; display:flex; flex-direction:column; align-items:center; gap:6px;
+  color:rgba(255,255,255,0.3); font-size:0.68rem; letter-spacing:0.12em; text-transform:uppercase;
+}
+.arr { width:18px; height:18px; border-right:2px solid rgba(255,255,255,0.25); border-bottom:2px solid rgba(255,255,255,0.25); transform:rotate(45deg); animation:sb 1.6s infinite; }
+@keyframes sb { 0%,100%{transform:rotate(45deg) translateY(0)} 50%{transform:rotate(45deg) translateY(5px)} }
+@keyframes fadeUp { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+
+/* ===================== HOW IT WORKS ===================== */
+.how { background:#fff; padding:4rem 1.5rem; }
+.sec-label { text-align:center; font-size:0.75rem; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--orange); margin-bottom:0.5rem; }
+.sec-title { font-family:'Syne',sans-serif; font-size:clamp(1.5rem, 5vw, 2.1rem); font-weight:800; text-align:center; color:var(--dark); margin-bottom:2.5rem; }
+.steps { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:1.2rem; max-width:860px; margin:0 auto; }
+.step { background:var(--bg); border-radius:20px; padding:1.6rem 1.2rem; text-align:center; border-bottom:3px solid transparent; transition:border-color 0.2s, transform 0.2s; }
+.step:hover { border-color:var(--orange); transform:translateY(-4px); }
+.step-icon { width:52px; height:52px; border-radius:16px; background:linear-gradient(135deg, var(--orange), var(--gold)); display:flex; align-items:center; justify-content:center; font-size:1.4rem; margin:0 auto 1rem; box-shadow:0 6px 20px rgba(248,92,4,0.28); }
+.step h3 { font-family:'Syne',sans-serif; font-size:0.95rem; font-weight:800; color:var(--dark); margin-bottom:0.4rem; }
+.step p { font-size:0.82rem; color:#999; line-height:1.6; }
+
+/* ===================== PHONES ===================== */
+.phones { padding:4rem 1.2rem; background:var(--bg); }
+.phones-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(260px,1fr)); gap:1.5rem; max-width:940px; margin:0 auto; }
+
+.card { background:var(--white); border-radius:24px; overflow:hidden; box-shadow:0 2px 18px rgba(0,0,0,0.07); transition:transform 0.35s cubic-bezier(.34,1.56,.64,1), box-shadow 0.3s; position:relative; }
+.card:hover { transform:translateY(-10px); box-shadow:0 20px 50px rgba(248,92,4,0.14); }
+
+.ctag { position:absolute; top:14px; left:14px; z-index:3; font-family:'Syne',sans-serif; font-size:0.66rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; padding:0.25rem 0.75rem; border-radius:50px; }
+.ct-orange { background:var(--orange); color:#fff; }
+.ct-purple { background:var(--purple); color:#fff; }
+.ct-gold   { background:var(--gold); color:var(--dark); }
+.ct-teal   { background:#0a9e8a; color:#fff; }
+
+/* image panel */
+.cimg { height:220px; display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; }
+.cimg::after { content:''; position:absolute; width:200px; height:200px; border-radius:50%; opacity:0.15; top:50%; left:50%; transform:translate(-50%,-50%); }
+.ci-blue  { background:linear-gradient(150deg,#deeaff,#c4d6ff); }
+.ci-blue::after  { background:#3b7dff; }
+.ci-fire  { background:linear-gradient(150deg,#ffe8d8,#ffd0b5); }
+.ci-fire::after  { background:var(--orange); }
+.ci-deep  { background:linear-gradient(150deg,#e5e0ff,#cdc4ff); }
+.ci-deep::after  { background:var(--purple); }
+.ci-gold  { background:linear-gradient(150deg,#fff8e0,#ffe9aa); }
+.ci-gold::after  { background:var(--gold); }
+
+.cimg img { max-height:180px; max-width:150px; object-fit:contain; position:relative; z-index:1; filter:drop-shadow(0 12px 28px rgba(0,0,0,0.2)); transition:transform 0.4s ease; }
+.card:hover .cimg img { transform:scale(1.09) translateY(-6px) rotate(2deg); }
+
+/* fallback emoji phone when image fails */
+.phone-emoji { font-size:5rem; position:relative; z-index:1; }
+
+.cbody { padding:1.2rem 1.4rem 1.5rem; }
+.cname { font-family:'Syne',sans-serif; font-size:1.1rem; font-weight:800; color:var(--dark); }
+.cspec { display:inline-block; font-size:0.7rem; background:var(--bg); color:#aaa; border-radius:50px; padding:0.15rem 0.65rem; margin:4px 0 0.9rem; }
+
+.ctotal { display:flex; align-items:baseline; gap:6px; margin-bottom:0.8rem; }
+.ctotal-num { font-family:'Syne',sans-serif; font-size:1.45rem; font-weight:900; color:var(--dark); }
+.ctotal-lbl { font-size:0.8rem; color:#bbb; }
+
+.down-box { background:linear-gradient(90deg,#fff4eb,#fff); border:1.5px solid #ffcfa0; border-radius:12px; padding:0.55rem 0.9rem; display:flex; align-items:center; justify-content:space-between; margin-bottom:0.8rem; }
+.dl { font-size:0.76rem; color:#bbb; }
+.dv { font-family:'Syne',sans-serif; font-size:1.05rem; font-weight:900; color:var(--orange); }
+
+.pills { display:flex; gap:0.5rem; margin-bottom:1.1rem; }
+.pill { flex:1; background:var(--bg); border-radius:12px; padding:0.5rem; text-align:center; }
+.pill-l { display:block; font-size:0.65rem; color:#bbb; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:2px; }
+.pill-v { font-family:'Syne',sans-serif; font-size:0.92rem; font-weight:700; color:var(--dark); }
+
+.wa { display:flex; align-items:center; justify-content:center; gap:8px; width:100%; padding:0.85rem; background:var(--green); color:#fff; border-radius:14px; font-family:'Syne',sans-serif; font-weight:700; font-size:0.9rem; text-decoration:none; box-shadow:0 4px 18px rgba(37,211,102,0.28); transition:background 0.2s, transform 0.15s; }
+.wa:hover { background:#1db954; transform:scale(1.02); }
+.wa svg { width:19px; height:19px; fill:#fff; flex-shrink:0; }
+
+/* ===================== ORDER FLOW ===================== */
+.order-flow {
+  background: linear-gradient(135deg, #1a0533 0%, #0f1a6a 100%);
+  padding:4rem 1.5rem; text-align:center; position:relative; overflow:hidden;
+}
+.order-flow::before { content:''; position:absolute; inset:0; background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px); background-size: 48px 48px; }
+.order-flow .sec-label { color:var(--gold); }
+.order-flow .sec-title { color:#fff; }
+.flow-steps { display:flex; flex-wrap:wrap; justify-content:center; gap:0; max-width:820px; margin:0 auto; position:relative; z-index:1; }
+.flow-step { flex:1; min-width:140px; padding:1.4rem 0.8rem; text-align:center; position:relative; }
+.flow-step:not(:last-child)::after { content:'→'; position:absolute; right:-8px; top:46%; transform:translateY(-50%); color:rgba(255,255,255,0.2); font-size:1.4rem; }
+.flow-icon { width:56px; height:56px; border-radius:18px; border:2px solid rgba(255,255,255,0.15); background:rgba(255,255,255,0.07); display:flex; align-items:center; justify-content:center; font-size:1.5rem; margin:0 auto 0.8rem; }
+.flow-step h4 { font-family:'Syne',sans-serif; font-size:0.85rem; font-weight:700; color:#fff; margin-bottom:0.3rem; }
+.flow-step p { font-size:0.76rem; color:rgba(255,255,255,0.45); line-height:1.5; }
+
+/* ===================== FOOTER ===================== */
+footer { background:var(--dark); padding:3rem 1.5rem; text-align:center; }
+.footer-brand { display:flex; align-items:center; justify-content:center; gap:10px; margin-bottom:0.4rem; }
+.footer-brand-logo { width:36px; height:36px; border-radius:10px; background:linear-gradient(135deg, var(--gold), var(--orange)); display:flex; align-items:center; justify-content:center; font-family:'Syne',sans-serif; font-weight:900; font-size:1rem; color:#fff; }
+.footer-brand-name { font-family:'Syne',sans-serif; font-size:1.2rem; font-weight:900; color:#fff; }
+.footer-brand-name span { color:var(--gold); }
+footer p { color:rgba(255,255,255,0.35); font-size:0.82rem; margin-bottom:1.4rem; }
+.footer-wa { display:inline-flex; align-items:center; gap:8px; background:var(--green); color:#fff; padding:0.75rem 1.8rem; border-radius:100px; font-family:'Syne',sans-serif; font-weight:700; font-size:0.9rem; text-decoration:none; transition:transform 0.2s; }
+.footer-wa:hover { transform:scale(1.04); }
+.footer-wa svg { width:18px; height:18px; fill:#fff; }
+.footer-note { margin-top:1.5rem; color:rgba(255,255,255,0.18); font-size:0.72rem; }
+.footer-agent { margin-top:0.5rem; color:rgba(255,255,255,0.25); font-size:0.72rem; }
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+
+  <div class="hero-inner">
+
+    <!-- Brand -->
+    <div class="brand-header">
+      <div class="brand-logo">AG</div>
+      <div>
+        <div class="brand-name">Albuk <span>Global</span></div>
+        <span class="brand-tagline">Jumia Jforce Partner</span>
+      </div>
+    </div>
+
+    <div class="top-pill">
+      <span class="pulse-dot"></span>
+      Official Jumia Jforce Agent &nbsp;·&nbsp; Orders Open
+    </div>
+
+    <h1>
+      Pata Samsung<br>
+      <span class="grd">Lipa Mdogo Mdogo!</span>
+    </h1>
+
+    <p class="hero-desc">
+      Choose your Samsung phone below. Send us a WhatsApp message — we place your Jumia order for you, fast and easy. Delivered to your nearest pickup station.
+    </p>
+
+    <!-- Agent card -->
+    <div class="agent-badge">
+      <div class="agent-av">AG</div>
+      <div class="agent-txt">
+        <span class="agent-role">Your Albuk Global Agent</span>
+        <span class="agent-name">Silvia Anangwe</span>
+        <span class="agent-sub">+254 768 789 382</span>
+      </div>
+    </div>
+
+    <a class="hero-cta"
+       href="https://wa.me/254768789382?text=Hello%20Albuk%20Global!%20I%20saw%20your%20page%20and%20I%27m%20interested%20in%20a%20Samsung%20phone%20on%20Lipa%20Mdogo%20Mdogo.%20Please%20help%20me%20order."
+       target="_blank"
+       onclick="trackWA('General Enquiry')">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      Chat With Us Now
+    </a>
+  </div>
+
+  <div class="scroll-down">
+    <div class="arr"></div>
+    See Available Phones
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="how">
+  <p class="sec-label">Simple Process</p>
+  <h2 class="sec-title">How It Works</h2>
+  <div class="steps">
+    <div class="step"><div class="step-icon">📱</div><h3>Pick Your Phone</h3><p>Browse below and choose the Samsung you want.</p></div>
+    <div class="step"><div class="step-icon">💬</div><h3>WhatsApp Us</h3><p>Tap the button. Your order details go straight to us.</p></div>
+    <div class="step"><div class="step-icon">🛒</div><h3>We Place the Order</h3><p>Albuk Global places your Jumia Jforce order for you.</p></div>
+    <div class="step"><div class="step-icon">📦</div><h3>Collect & Pay</h3><p>Pick up at the nearest station, pay in easy installments.</p></div>
+  </div>
+</section>
+
+<!-- ============ PHONES ============ -->
+<section class="phones">
+  <p class="sec-label">Available Now via Jumia</p>
+  <h2 class="sec-title">Choose Your Samsung</h2>
+
+  <div class="phones-grid">
+
+    <!-- A05 64/4 -->
+    <div class="card">
+      <span class="ctag ct-orange">Best Value</span>
+      <div class="cimg ci-blue">
+        <img
+          src="https://images.samsung.com/is/image/samsung/p6pim/levant/sm-a055fzkgmea/gallery/levant-galaxy-a05-sm-a055f-sm-a055fzkgmea-thumb-535647339"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+          alt="Samsung Galaxy A05 64GB Black">
+        <span class="phone-emoji" style="display:none">📱</span>
+      </div>
+      <div class="cbody">
+        <div class="cname">Samsung Galaxy A05</div>
+        <span class="cspec">64GB · 4GB RAM · A055F/DS</span>
+        <div class="ctotal"><span class="ctotal-lbl">Total Price:</span><span class="ctotal-num">KES 14,200</span></div>
+        <div class="down-box"><span class="dl">🔑 Down Payment</span><span class="dv">KES 3,800</span></div>
+        <div class="pills">
+          <div class="pill"><span class="pill-l">Weekly</span><span class="pill-v">KES 581</span></div>
+          <div class="pill"><span class="pill-l">Daily</span><span class="pill-v">KES 83</span></div>
+        </div>
+        <a class="wa"
+           href="https://wa.me/254768789382?text=Hello%20Albuk%20Global!%20%F0%9F%91%8B%20I%27d%20like%20to%20order%20the%20*Samsung%20Galaxy%20A05%20(64GB%2F4GB)*%20on%20Lipa%20Mdogo%20Mdogo.%0A%0A%F0%9F%93%8B%20Details%3A%0ATotal%3A%20KES%2014%2C200%0ADown%20Payment%3A%20KES%203%2C800%0AWeekly%3A%20KES%20581%0A%0APlease%20help%20me%20place%20the%20Jumia%20order.%20%F0%9F%99%8F"
+           target="_blank"
+           onclick="
